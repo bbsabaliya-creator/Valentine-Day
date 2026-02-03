@@ -41,7 +41,8 @@ yesBtn.addEventListener("click", () => {
 
     yesBtn.style.display = "none";
     noBtn.style.display = "none";
-    finalGif.style.display = "block";
+    // Show GIF only at final step
+    finalGif.hidden = false;
     startHearts();
   }
 
