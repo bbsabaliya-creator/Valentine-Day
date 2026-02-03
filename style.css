@@ -70,4 +70,10 @@ button {
     transform: translateY(-10vh);
     opacity: 0;
   }
+  #finalGif {
+  width: 220px;
+  margin-top: 20px;
+  display: none;
+  border-radius: 15px;
+}
 }
