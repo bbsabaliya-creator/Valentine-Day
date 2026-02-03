@@ -3,18 +3,27 @@ const CONFIG = {
   name: "Ayushi 💖",
 
   questions: [
-    "Do you love me? 😍",
-    "How much do you love me? 💕",
-    "Will you be my Valentine? 💘"
+    {
+      text: "Do you feel something special when you see me? 😘",
+      yes: "Yes 💘"
+    },
+    {
+      text: "How much do you love me? 💕",
+      yes: "This much 🤗💖"
+    },
+    {
+      text: "Will you be my Valentine and forever partner? 💍💘",
+      yes: "Yes! 😍"
+    }
   ],
 
   yesMessages: [
-    "I knew it! 😘",
-    "You're my world 💞",
-    "I love you forever 💖"
+    "That smile of yours is my favorite 😘",
+    "Infinity + Beyond 🚀💞",
+    "My life is better with you 💖"
   ],
 
-  finalMessage: "Yayyy! You are officially my Valentine 💍💘",
+  finalMessage: "Yayyy! You are officially my Valentine 💍❤️",
 
-  noMessage: "Hey! You can't say No 😝❤️"
+  noMessage: "No is not allowed 😝💕"
 };
