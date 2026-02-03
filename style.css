@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #ff758c, #ff7eb3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  max-width: 350px;
+}
+
+h1 {
+  color: #ff4081;
+}
+
+p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#yesBtn {
+  background: #ff4081;
+  color: white;
+}
+
+#yesBtn:hover {
+  background: #e73370;
+}
+
+#noBtn {
+  background: #ddd;
+}
+
+/* Floating hearts */
+.heart {
+  position: absolute;
+  font-size: 24px;
+  animation: float 6s linear infinite;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+}
