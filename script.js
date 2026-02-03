@@ -10,8 +10,17 @@ let step = 0;
 // Set Title
 title.innerText = `Hey ${CONFIG.name}`;
 
-// First Question
-question.innerText = CONFIG.questions[0];
+
+// Show First Question
+showQuestion();
+
+function showQuestion() {
+
+  question.innerText = CONFIG.questions[step].text;
+
+  yesBtn.innerText = CONFIG.questions[step].yes;
+
+}
 
 
 // YES Button
@@ -23,7 +32,7 @@ yesBtn.addEventListener("click", () => {
 
     step++;
 
-    question.innerText = CONFIG.questions[step];
+    showQuestion();
 
   } else {
 
@@ -38,7 +47,7 @@ yesBtn.addEventListener("click", () => {
 });
 
 
-// NO Button Runs Away 😆
+// NO Button Runs Away
 noBtn.addEventListener("mouseover", () => {
 
   const x = Math.random() * 200 - 100;
@@ -54,7 +63,7 @@ noBtn.addEventListener("click", () => {
 });
 
 
-// Floating Hearts Effect 💖
+// Floating Hearts
 function startHearts() {
 
   setInterval(() => {
