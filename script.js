@@ -3,6 +3,7 @@ const question = document.getElementById("question");
 
 const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
+const finalGif = document.getElementById("finalGif");
 
 let step = 0;
 
@@ -40,7 +41,7 @@ yesBtn.addEventListener("click", () => {
 
     yesBtn.style.display = "none";
     noBtn.style.display = "none";
-
+    finalGif.style.display = "block";
     startHearts();
   }
 
